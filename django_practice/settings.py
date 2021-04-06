@@ -119,6 +119,10 @@ TIME_ZONE = 'Asia/Seoul'
 
 USE_I18N = True
 
+DATETIME_FORMAT = "Y-m-d P h:i:s"
+L10N = False
+USE_TZ = False
+
 USE_L10N = True
 
 USE_TZ = True
