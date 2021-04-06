@@ -31,6 +31,10 @@ urlpatterns = [
     path('emaillist01/form', emaillist01views.form),
     path('emaillist01/add', emaillist01views.add),
 
+    path('emaillist02/', emaillist01views.index),
+    path('emaillist02/form', emaillist01views.form),
+    path('emaillist02/add', emaillist01views.add),
+
     path('guestbook01/', guestbook01views.index),
     path('guestbook01/add', guestbook01views.guestAdd),
     path('guestbook01/deleteForm', guestbook01views.deleteForm),

@@ -1,3 +1,4 @@
+{% load mathfilters %}
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -19,16 +20,17 @@
 	</table>
 	</form>
 	<br>
+	--{{guest_list | length}}--<br/>
 	{% for guestRow in guest_list %}
 	<table width=510 border=1>
 		<tr>
-			<td>[{{guestRow.no}}]</td>
+			<td>[{{guest_list | length | sub:forloop.counter | add:1}}]</td>
 			<td>{{guestRow.name}}</td>
 			<td>{{guestRow.reg_date}}</td>
 			<td><a href="/guestbook01/deleteForm?no={{guestRow.no}}">삭제</a></td>
 		</tr>
 		<tr>
-			<td colspan=4>{{guestRow.message}}</td>
+			<td colspan=4>{{guestRow.message | linebreaksbr}}</td>
 		</tr>
 	</table>
 	<br/>
