@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'emaillist01',
     'emaillist02',
     'guestbook01',
+    'guestbook02',
     'mathfilters',
     'django.contrib.admin',
     'django.contrib.auth',
